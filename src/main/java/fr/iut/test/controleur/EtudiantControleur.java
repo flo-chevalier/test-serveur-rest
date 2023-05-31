@@ -21,4 +21,9 @@ public class EtudiantControleur {
     public List<Etudiant> getAll() {
         return etudiantService.findAll();
     }
+
+    @GetMapping("/bessac")
+    public List<Etudiant> getAllBessac() {
+        return etudiantService.findAllBessac();
+    }
 }

@@ -18,4 +18,8 @@ public class EtudiantService {
     public List<Etudiant> findAll() {
         return etudiantDAO.findAll(Sort.by("nom", "prenom"));
     }
+
+    public List<Etudiant> findAllBessac() {
+        return etudiantDAO.findByNomIgnoreCase("bessac");
+    }
 }
