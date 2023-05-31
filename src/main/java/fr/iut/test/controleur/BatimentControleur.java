@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("batiments")
+@CrossOrigin
 public class BatimentControleur {
     private final BatimentService batimentService;
 
